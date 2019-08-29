@@ -1,0 +1,25 @@
+{
+  "name": "lambda-deploy-lambda",
+  "version": "0.0.1",
+  "description": "AWS Lambda function to deploy other lambdas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "chmod 744 ./build-bundle.sh",
+    "build": "./build-bundle.sh lambda-deploy-lambda.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eximchain/lambda-deploy-lambda.git"
+  },
+  "author": "Louis Lamia",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Eximchain/lambda-deploy-lambda/issues"
+  },
+  "homepage": "https://github.com/Eximchain/lambda-deploy-lambda#readme",
+  "dependencies": {
+    "@types/node": "^12.7.2",
+    "aws-sdk": "^2.424.0"
+  }
+}
